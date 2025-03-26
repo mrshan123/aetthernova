@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Aethernova is your IT education hub for learning and mastering IT skills, including programming, cybersecurity, AI & ML, and more.">
+    <meta name="keywords" content="IT education, programming, web development, cybersecurity, AI, machine learning, Python, HTML, CSS">
+    <meta name="author" content="Aethernova">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+    <title>Aethernova - IT Education Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1><a href="#">Aethernova</a></h1> <!-- Website Name as Text Logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Aethernova</h1>
+        <p>Learn, Build, Innovate with cutting-edge IT education!</p>
+        <a href="#courses" class="cta-button">Join Now</a>
+    </section>
+
+       <!-- Courses Page Section -->
+       <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-container">
+            <div class="course">
+                <div class="course-image">
+                    <img src="learn-programming-career-jpg.webp" alt="Computing Languages">
+                </div>
+                <div class="course-info">
+                    <h3>Computer Fundamentals</h3>
+                    <p>Learn about the fundamental computing languages and how they interact with hardware and software!</p>
+                    <a href="computer fundamentals.html" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="course">
+                <div class="course-image">
+                    <img src="9430449274.png" alt="Programming with Python">
+                </div>
+                <div class="course-info">
+                    <h3>Programming with Python</h3>
+                    <p>Learn the basics of Python programming and start building your own projects.</p>
+                    <a href="python-course.html" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="course">
+                <div class="course-image">
+                    <img src="360_F_871603234_fTMmjlUOpt4F9mDudj8wjyzkt0khEtSZ.jpg" alt="Web Development">
+                </div>
+                <div class="course-info">
+                    <h3>Web Development</h3>
+                    <p>Master HTML, CSS, and JavaScript to create stunning websites.</p>
+                    <a href="web-course.html" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="course">
+                <div class="course-image">
+                    <img src="technology-security-concept-safety-digital-protection-system-1080x675.jpg" alt="Cybersecurity Essentials">
+                </div>
+                <div class="course-info">
+                    <h3>Cybersecurity Essentials</h3>
+                    <p>Understand the core concepts of cybersecurity and how to protect systems.</p>
+                    <a href="cyber-course.html" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="course">
+                <div class="course-image">
+                    <img src="fiber-optic-cables-connected-to-computer-network-server.webp" alt="AI & Machine Learning">
+                </div>
+                <div class="course-info">
+                    <h3>Comprehensive Networking</h3>
+                    <p>Learn about the core concepts of networking, how devices communicate over networks, and the technologies that power the internet!</p>
+                    <a href="ai-course.html" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="course">
+                <div class="course-image">
+                    <img src="Cloud-Computing-History-1.png" alt="Cloud Computing">
+                </div>
+                <div class="course-info">
+                    <h3>Cloud Computing</h3>
+                    <p>Learn how cloud technology is transforming the IT industry.</p>
+                    <a href="cloud-course.html" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Resources Section -->
+<section id="resources">
+    <h2>Useful Resources</h2>
+    <ul>
+        <li><a href="#">E-books (PDF Downloads)</a></li>
+        <li><a href="#">GitHub Repositories</a></li>
+        <a href="resources.html" class="learn-more-btn">Learn More</a>
+    </ul>
+</section>
+
+   <!-- About Us Section -->
+   <section id="about">
+    <h2>About Us</h2>
+    <p>"Aethernova provides high-quality IT education, equipping learners with the skills to thrive in the tech industry. Click 'Learn More' to explore our mission."</p>
+    <a href="about.html" class="learn-more-btn">Learn More</a>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Aethernova. All Rights Reserved.</p>
+            <a href="#" class="design-by">DESIGN BY SHAN</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Scroll to Top Button
+        let mybutton = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

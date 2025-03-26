@@ -1,0 +1,510 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #eae0e000; /* Dark background for techy vibes */
+    color: #cdc3c3; /* Light text */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #F5F5F5;
+    letter-spacing: 4.0px;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00A9E0; /* Tech Blue */
+    color: #121212;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #007B8E; /* Darker blue */
+    transform: scale(1.1);
+}
+
+/* Header Section */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #0b1a29; /* Dark Tech Blue */
+    color: #F5F5F5;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideDown 0.8s ease-out;
+}
+
+/* Logo Styling */
+header .logo h1 a {
+    color: #00bcd4; /* Tech Blue */
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Navigation Bar */
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-left: 30px;
+    position: relative;
+}
+
+/* Navigation Links */
+header nav ul li a {
+    color: #F5F5F5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect on Links */
+header nav ul li a:hover {
+    color: #121212;
+    background-color: #0bd7ea; /* Tech Blue */
+    transform: translateY(-5px);
+}
+
+/* Hover effect: underline animation */
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0bd7ea;
+    transition: width 0.3s ease-in-out;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+#home {
+    background-image: url('learn-programming-career-jpg.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    position: relative;
+    animation: fadeIn 2s ease-out;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    animation: slideUp 1.5s ease-out;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    opacity: 0;
+    color: #ededed;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+/* Call to Action Button */
+.cta-button {
+    padding: 15px 30px;
+    background-color: #00A9E0; /* Tech Blue */
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out 1s forwards;
+}
+
+.cta-button:hover {
+    background-color: #007B8E;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Section Styling */
+section {
+    padding: 80px 20px;
+    background-color: #fff;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Title Styling for Lessons */
+h2 {
+    font-size: 36px;
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Lesson Container (flex layout with space) */
+.lesson {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    animation: slideUp 1s ease-out;
+}
+
+/* Lesson Content Styling */
+.lesson-content {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image inside lesson */
+.lesson img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects for Images */
+.lesson img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Styling for Lessons */
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 1px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* List Styling in Lessons */
+ul {
+    margin-left: 20px;
+    font-size: 16px;
+    list-style-type: square;
+    color: #34495e;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Hover Animation for Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    transform: scale(1.1);
+}
+
+/* Hover Effect for Lessons */
+.lesson:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Add border color change when hovering over each lesson */
+.lesson:hover {
+    border: 3px solid #2980b9;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dynamic Background for Lessons */
+.lesson-content:hover {
+    background-color: #ecf0f1;
+}
+
+/* Text Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-up Animation for Lessons */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add a Dynamic Background Color to Each Lesson */
+.lesson {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.lesson:hover {
+    background-color: #f2f2f2;
+}
+
+/* Dynamic Hover Effect for Lesson Text */
+h3, p {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Responsive Design for Different Screen Sizes */
+@media screen and (min-width: 1024px) {
+    .lesson {
+        flex-wrap: nowrap;
+    }
+    
+    .lesson img {
+        width: 50%;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lesson {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lesson img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Button Styling for CTA */
+button {
+    padding: 12px 24px;
+    background-color: #2980b9;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+/* Special Styling for Week Titles */
+#lesson-1 h3, #lesson-2 h3, #lesson-3 h3 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+/* Styling for Individual List Items */
+ul li {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+/* Styling for Images in the Lessons */
+.lesson img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+/* Adding More Interactivity to Lesson Content */
+.lesson-content {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.lesson-content:hover {
+    background-color: #ecf0f1;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll Effects */
+.lesson-content, h3, p {
+    animation: fadeIn 1s ease-out;
+}
+/* Footer Section */
+footer {
+    background-color: #162839;
+    color: #F5F5F5;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer .design-by {
+    color: #08e2f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer .design-by:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries (Responsive Design) */
+@media (max-width: 768px) {
+    .course-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+    }
+
+    form {
+        padding: 0 20px;
+    }
+}

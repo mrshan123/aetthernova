@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Aethernova is your IT education hub for learning and mastering IT skills, including programming, cybersecurity, AI & ML, and more.">
+    <meta name="keywords" content="IT education, programming, web development, cybersecurity, AI, machine learning, Python, HTML, CSS">
+    <meta name="author" content="Aethernova">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+    <title>Aethernova - IT Education Hub</title>
+    <link rel="stylesheet" href="python-course.css">
+</head>
+
+<body>
+
+    <!-- Scroll to Top Button -->
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">↑</button>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1><a href="#">Aethernova</a></h1> <!-- Website Name as Text Logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Programming with Python</h1>
+        <p>Unlock the power of Python! Dive into the world of programming and bring your ideas to life with clean, elegant code.</p>
+    </section>
+
+<!-- Python Course Section -->
+<section id="python-course">
+    <h2>Python Programming: Learn from Scratch</h2>
+    <p>Welcome to the Python Programming course! Whether you're a beginner or just brushing up on your skills, this course will help you learn Python from the ground up, with practical examples and real-world applications.</p>
+
+    <h3>Course Outline</h3>
+    <ol>
+        <li><a href="#lesson1">Lesson 1: Introduction to Python</a></li>
+        <li><a href="#lesson2">Lesson 2: Variables and Data Types</a></li>
+        <li><a href="#lesson3">Lesson 3: Control Flow (Conditionals & Loops)</a></li>
+        <li><a href="#lesson4">Lesson 4: Functions and Modules</a></li>
+        <li><a href="#lesson5">Lesson 5: Data Structures (Lists, Tuples, Dictionaries)</a></li>
+        <li><a href="#lesson6">Lesson 6: File Handling</a></li>
+        <li><a href="#lesson7">Lesson 7: Object-Oriented Programming (OOP)</a></li>
+        <li><a href="#lesson8">Lesson 8: Error Handling and Exceptions</a></li>
+        <li><a href="#lesson9">Lesson 9: Working with Libraries and APIs</a></li>
+        <li><a href="#lesson10">Lesson 10: Final Project</a></li>
+        <li><a href="#lesson11">Lesson 11: Advanced Python Topics</a></li>
+        <li><a href="#lesson12">Lesson 12: Final Review and Next Steps</a></li>
+    </ol>
+
+    <!-- Lesson 1: Introduction to Python -->
+    <section id="lesson1">
+        <h3>Lesson 1: Introduction to Python</h3>
+        <p>This lesson introduces Python, a powerful and easy-to-learn programming language. You'll learn how to install Python and run your first program.</p>
+        <img src="introduction-python-cover.webp" alt="Introduction to Python">
+        <ul>
+            <li>What is Python?</li>
+            <li>How to Install Python</li>
+            <li>Running Your First Program</li>
+            <li>Basic Syntax and Indentation</li>
+        </ul>
+
+        <h4>Key Points:</h4>
+        <ul>
+            <li>Python is a high-level, interpreted programming language.</li>
+            <li>It is widely used in web development, data analysis, machine learning, and automation.</li>
+            <li>Python emphasizes code readability and simplicity.</li>
+        </ul>
+
+        <h4>Example:</h4>
+        <p>Here’s the simplest Python program:</p>
+        <pre><code>
+# This is a comment
+print("Hello, World!")
+        </code></pre>
+
+        <p>When you run this, Python will output:</p>
+        <pre><code>
+Hello, World!
+        </code></pre>
+
+        <h4>Exercise:</h4>
+        <p>Create your own Python program that prints your name and favorite hobby. Here's an example template:</p>
+        <pre><code>
+# Replace with your name and hobby
+print("My name is [Your Name] and I love [Your Hobby].")
+        </code></pre>
+
+        <h4>Summary:</h4>
+        <p>In this lesson, you've learned the basics of Python, how to install it, and write your first program. Keep practicing to get comfortable with Python syntax!</p>
+    </section>
+
+    <!-- Lesson 2: Variables and Data Types -->
+    <section id="lesson2">
+        <h3>Lesson 2: Variables and Data Types</h3>
+        <p>In this lesson, you'll learn how to store and manipulate data using variables and basic data types like integers, floats, and strings.</p>
+        <img src="basic-data-types.png" alt="Variables and Data Types">
+        <ul>
+            <li>What are Variables?</li>
+            <li>Common Data Types in Python: Integers, Floats, Strings, and Booleans</li>
+            <li>Type Conversion</li>
+            <li>Basic Operations</li>
+        </ul>
+
+        <h4>Key Points:</h4>
+        <ul>
+            <li>Variables are containers used to store data values.</li>
+            <li>Common data types in Python include strings (text), integers (whole numbers), floats (decimal numbers), and booleans (True/False values).</li>
+            <li>You can perform basic arithmetic operations on numbers and combine strings.</li>
+        </ul>
+
+        <h4>Example:</h4>
+        <p>Here’s how you define variables in Python:</p>
+        <pre><code>
+name = "John Doe"  # String
+age = 25  # Integer
+height = 5.9  # Float
+is_student = True  # Boolean
+        </code></pre>
+
+        <p>Now let’s perform some basic operations:</p>
+        <pre><code>
+age = age + 1  # Increment age by 1
+height = height * 100  # Convert height to centimeters
+print("In 1 year, you will be", age, "years old.")
+        </code></pre>
+
+        <h4>Exercise:</h4>
+        <p>Create variables to store your name, age, and favorite color. Then, print a sentence like "My name is [name], I am [age] years old, and my favorite color is [color]."</p>
+
+        <h4>Summary:</h4>
+        <p>In this lesson, you’ve learned how to define and use variables, as well as work with basic data types in Python. Practice using variables and operators in your own code!</p>
+    </section>
+
+    <!-- Lesson 3: Control Flow (Conditionals & Loops) -->
+    <section id="lesson3">
+        <h3>Lesson 3: Control Flow (Conditionals & Loops)</h3>
+        <p>This lesson teaches you how to control the flow of your program using conditional statements (if-else) and loops (for, while).</p>
+        <img src="1_6TCvKMqR7GRNnkw5iugT6A.png" alt="Control Flow (Conditionals & Loops)">
+        <ul>
+            <li>If, Else, and Elif Statements</li>
+            <li>Comparison Operators</li>
+            <li>For and While Loops</li>
+            <li>Using Loops with Lists</li>
+        </ul>
+
+        <h4>Key Points:</h4>
+        <ul>
+            <li>Conditional statements allow your program to make decisions (e.g., if a number is greater than 10).</li>
+            <li>Loops allow you to repeat tasks multiple times, which is useful for iterating over collections or performing repetitive tasks.</li>
+        </ul>
+
+        <h4>Example: If-Else Statement</h4>
+        <p>We can use `if`, `else`, and `elif` to make decisions in our programs:</p>
+        <pre><code>
+age = 18
+if age >= 18:
+print("You are an adult.")
+else:
+print("You are a minor.")
+        </code></pre>
+
+        <h4>Example: For Loop</h4>
+        <p>A `for` loop is used to repeat a block of code a fixed number of times:</p>
+        <pre><code>
+for i in range(5):  # Loop 5 times
+print("This is loop iteration", i)
+        </code></pre>
+
+        <h4>Exercise:</h4>
+        <p>Write a program that checks if a number is even or odd. Then, create a loop that counts from 1 to 10 and prints each number.</p>
+
+        <h4>Summary:</h4>
+        <p>In this lesson, you learned how to control the flow of your programs with conditionals and loops. These concepts are crucial for writing dynamic and flexible code.</p>
+    </section>
+
+    <!-- Lesson 4: Functions and Modules -->
+    <section id="lesson4">
+        <h3>Lesson 4: Functions and Modules</h3>
+        <p>Learn how to organize your code into reusable functions and use Python's built-in modules for enhanced functionality.</p>
+        <img src="Modules-in-Python-tv.jpg" alt="Functions and Modules">
+        <ul>
+            <li>Defining Functions</li>
+            <li>Parameters and Return Values</li>
+            <li>Built-in Functions</li>
+            <li>Using Modules</li>
+        </ul>
+
+        <h4>Key Points:</h4>
+        <ul>
+            <li>Functions allow you to bundle code into reusable blocks.</li>
+            <li>Python has many built-in functions, such as `print()`, `len()`, and `type()`, which simplify tasks.</li>
+            <li>Modules are files that contain Python definitions and statements, which you can import into your program to extend its functionality.</li>
+        </ul>
+
+        <h4>Example: Function Definition</h4>
+        <p>Here’s how you define a simple function in Python:</p>
+        <pre><code>
+def greet(name):
+print("Hello, " + name + "!")
+
+greet("Alice")  # Output: Hello, Alice!
+        </code></pre>
+
+        <h4>Exercise:</h4>
+        <p>Create a function that takes two numbers as input and returns their sum. Then, test the function by passing two numbers of your choice.</p>
+
+        <h4>Summary:</h4>
+        <p>In this lesson, you learned how to define and use functions, as well as how to work with Python's built-in functions and modules to enhance your code.</p>
+    </section>
+
+    <!-- Lesson 5: Data Structures (Lists, Tuples, Dictionaries) -->
+    <section id="lesson5">
+        <h3>Lesson 5: Data Structures (Lists, Tuples, Dictionaries)</h3>
+        <p>In this lesson, you’ll dive into Python’s built-in data structures like lists, tuples, and dictionaries, and how to use them efficiently.</p>
+        <img src="Understanding-Data-Structures-in-Python-Lists-Tuples-and-Dictionaries-.jpg" alt="Data Structures (Lists, Tuples, Dictionaries)">
+        <ul>
+            <li>Understanding Lists, Tuples, and Dictionaries</li>
+            <li>Manipulating Lists: Add, Remove, Modify</li>
+            <li>Working with Tuples and Dictionaries</li>
+            <li>Using Loops with Data Structures</li>
+        </ul>
+
+        <h4>Key Points:</h4>
+        <ul>
+            <li>Lists are ordered collections that allow duplicates and can be modified.</li>
+            <li>Tuples are ordered collections, but they are immutable (cannot be modified).</li>
+            <li>Dictionaries are unordered collections of key-value pairs.</li>
+        </ul>
+
+        <h4>Example: List Operations</h4>
+        <pre><code>
+# Creating a list
+fruits = ["apple", "banana", "cherry"]
+
+# Adding an item to the list
+fruits.append("orange")
+
+# Removing an item from the list
+fruits.remove("banana")
+
+# Accessing list elements
+print(fruits[0])  # Output: apple
+        </code></pre>
+
+        <h4>Exercise:</h4>
+        <p>Create a list of your favorite foods and perform some basic operations like adding and removing items. Then, create a dictionary with at least three key-value pairs.</p>
+
+        <h4>Summary:</h4>
+        <p>In this lesson, you learned how to work with Python’s core data structures and how they can be used to store and organize your data.</p>
+    </section>
+
+    <!-- Lesson 6: File Handling -->
+    <section id="lesson6">
+        <h3>Lesson 6: File Handling</h3>
+        <p>This lesson teaches you how to work with files in Python, including reading from and writing to files.</p>
+        <img src="2022_11_MicrosoftTeams-image-78-1.jpg" alt="File Handling">
+        <ul>
+            <li>Opening Files</li>
+            <li>Reading from Files</li>
+            <li>Writing to Files</li>
+            <li>Closing Files</li>
+        </ul>
+
+        <h4>Key Points:</h4>
+        <ul>
+            <li>Use the `open()` function to open files in different modes (e.g., read, write).</li>
+            <li>The `read()` and `write()` functions allow you to interact with files.</li>
+            <li>Always close the file using the `close()` method after working with it.</li>
+        </ul>
+
+        <h4>Example: Writing to a File</h4>
+        <pre><code>
+# Open a file in write mode
+file = open("example.txt", "w")
+
+# Write to the file
+file.write("Hello, this is a test.")
+
+# Close the file
+file.close()
+        </code></pre>
+
+        <h4>Exercise:</h4>
+        <p>Create a Python program that writes some text to a file and then reads the file to display its contents.</p>
+
+        <h4>Summary:</h4>
+        <p>In this lesson, you learned how to work with files, including reading from and writing to text files. This skill is crucial for data processing tasks.</p>
+    </section>
+
+    <!-- Lesson 7: Object-Oriented Programming (OOP) -->
+    <section id="lesson7">
+        <h3>Lesson 7: Object-Oriented Programming (OOP)</h3>
+        <p>This lesson introduces object-oriented programming concepts like classes, objects, inheritance, and methods.</p>
+        <img src="What-is-Object-Oriented-Programming-in-Python.webp" alt="Object-Oriented Programming (OOP)">
+        <ul>
+            <li>Creating Classes and Objects</li>
+            <li>Instance Variables and Methods</li>
+            <li>Inheritance and Polymorphism</li>
+        </ul>
+
+        <h4>Key Points:</h4>
+        <ul>
+            <li>Classes are blueprints for creating objects, and objects are instances of classes.</li>
+            <li>Methods are functions defined inside a class that can operate on the instance data.</li>
+            <li>Inheritance allows one class to inherit properties and methods from another.</li>
+        </ul>
+
+        <h4>Example: Class and Object</h4>
+        <pre><code>
+class Dog:
+def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+def bark(self):
+    print(f"{self.name} says Woof!")
+
+# Create an object of Dog class
+dog1 = Dog("Buddy", 3)
+dog1.bark()  # Output: Buddy says Woof!
+        </code></pre>
+
+        <h4>Exercise:</h4>
+        <p>Create a class for a car, with methods to accelerate and brake. Then, create an object of your class and test the methods.</p>
+
+        <h4>Summary:</h4>
+        <p>In this lesson, you learned the basic concepts of object-oriented programming in Python, including how to define and use classes and objects.</p>
+    </section>
+
+    <!-- Lesson 8: Error Handling and Exceptions -->
+    <section id="lesson8">
+        <h3>Lesson 8: Error Handling and Exceptions</h3>
+        <p>This lesson covers how to handle errors and exceptions in Python to make your programs more robust and error-resistant.</p>
+        <img src="Exception-handling-in-python-1.jpg.webp" alt="Error Handling and Exceptions">
+        <ul>
+            <li>Understanding Errors and Exceptions</li>
+            <li>Using Try, Except, Finally</li>
+            <li>Raising Exceptions</li>
+        </ul>
+
+        <h4>Key Points:</h4>
+        <ul>
+            <li>Errors and exceptions can occur when your program encounters unexpected situations.</li>
+            <li>Use `try` and `except` blocks to catch and handle exceptions.</li>
+            <li>Use the `finally` block for cleanup tasks that should always run, regardless of exceptions.</li>
+        </ul>
+
+        <h4>Example: Try-Except Block</h4>
+        <pre><code>
+try:
+x = 1 / 0  # Division by zero
+except ZeroDivisionError:
+print("Cannot divide by zero!")
+finally:
+print("Execution completed.")
+        </code></pre>
+
+        <h4>Exercise:</h4>
+        <p>Create a program that asks the user to input two numbers and divides them, handling potential errors like division by zero.</p>
+
+        <h4>Summary:</h4>
+        <p>In this lesson, you learned how to handle errors and exceptions in Python, which helps to prevent your programs from crashing unexpectedly.</p>
+    </section>
+
+    <!-- Lesson 9: Working with Libraries and APIs -->
+    <section id="lesson9">
+        <h3>Lesson 9: Working with Libraries and APIs</h3>
+        <p>This lesson explains how to use external libraries and APIs in Python to extend the functionality of your programs.</p>
+        <img src="Best-Python-Libraries-For-Fun.jpg" alt="Working with Libraries and APIs">
+        <ul>
+            <li>Installing Python Libraries</li>
+            <li>Using the Requests Library to Fetch Data from APIs</li>
+            <li>Working with JSON Data</li>
+        </ul>
+
+        <h4>Key Points:</h4>
+        <ul>
+            <li>Python has a vast ecosystem of external libraries that can simplify tasks, such as web scraping or data manipulation.</li>
+            <li>APIs allow your program to communicate with external services, often returning data in JSON format.</li>
+        </ul>
+
+        <h4>Example: Using the Requests Library</h4>
+        <pre><code>
+import requests
+
+response = requests.get("https://api.github.com")
+data = response.json()
+print(data)
+        </code></pre>
+
+        <h4>Exercise:</h4>
+        <p>Use the `requests` library to fetch data from a public API and display the results in your Python program.</p>
+
+        <h4>Summary:</h4>
+        <p>In this lesson, you learned how to work with external libraries and APIs in Python, expanding the capabilities of your programs.</p>
+    </section>
+
+    <!-- Lesson 10: Final Project -->
+    <section id="lesson10">
+        <h3>Lesson 10: Final Project</h3>
+        <p>In this lesson, you’ll apply everything you’ve learned so far to create a final project. This project will test your understanding and give you a portfolio piece to showcase.</p>
+        <img src="0_enb8-0Si3pz2ZdaL.jpg" alt="Final Project">
+        <ul>
+            <li>Project Design</li>
+            <li>Implementing Functionality</li>
+            <li>Debugging and Testing</li>
+        </ul>
+
+        <h4>Exercise:</h4>
+        <p>Create a Python application that takes user input and processes the data based on the requirements. You can build anything from a basic calculator to a contact book!</p>
+
+        <h4>Summary:</h4>
+        <p>This final project will help you consolidate your learning and give you a hands-on experience of building a Python application.</p>
+    </section>
+
+    <!-- Lesson 11: Advanced Python Topics -->
+    <section id="lesson11">
+        <h3>Lesson 11: Advanced Python Topics</h3>
+        <p>This lesson dives into more advanced Python topics, such as decorators, generators, and context managers.</p>
+        <img src="Comprehensive-Guide-to-Advanced-Python-Programming-01-scaled.webp" alt="Advanced Python Topics">
+        <ul>
+            <li>Decorators</li>
+            <li>Generators</li>
+            <li>Context Managers</li>
+        </ul>
+
+        <h4>Key Points:</h4>
+        <ul>
+            <li>Decorators allow you to modify the behavior of functions or classes.</li>
+            <li>Generators are special functions that return an iterable set of items, one at a time.</li>
+            <li>Context managers are used to manage resources like files or network connections.</li>
+        </ul>
+
+        <h4>Example: Using a Decorator</h4>
+        <pre><code>
+def my_decorator(func):
+def wrapper():
+    print("Before function call")
+    func()
+    print("After function call")
+return wrapper
+
+@my_decorator
+def greet():
+print("Hello!")
+
+greet()
+        </code></pre>
+
+        <h4>Exercise:</h4>
+        <p>Experiment with decorators, generators, and context managers in your code to gain a deeper understanding of these advanced Python features.</p>
+
+        <h4>Summary:</h4>
+        <p>In this lesson, you explored advanced Python topics that will help you write more efficient and reusable code.</p>
+    </section>
+
+    <!-- Lesson 12: Final Review and Next Steps -->
+    <section id="lesson12">
+        <h3>Lesson 12: Final Review and Next Steps</h3>
+        <p>In this lesson, we’ll review everything you’ve learned and provide recommendations for your next steps in your Python journey.</p>
+        <img src="jnGn8KmCV4tP9sJZCd261Nst.png" alt="Final Review and Next Steps">
+        <ul>
+            <li>Review Key Concepts</li>
+            <li>Resources for Continued Learning</li>
+            <li>Join the Python Community</li>
+        </ul>
+
+        <h4>Key Points:</h4>
+        <ul>
+            <li>Review all key Python concepts you've learned throughout the course.</li>
+            <li>Explore online resources like Python documentation, blogs, and tutorials for continued learning.</li>
+            <li>Join Python communities (e.g., forums, Reddit, Stack Overflow) to stay engaged and get help.</li>
+        </ul>
+
+        <h4>Next Steps:</h4>
+        <p>Continue to practice coding regularly. Try contributing to open-source projects, building personal projects, or learning frameworks like Django or Flask.</p>
+
+        <h4>Summary:</h4>
+        <p>This course has provided a strong foundation in Python. Now, the journey of mastering Python is yours to continue!</p>
+    </section>
+
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Aethernova. All Rights Reserved.</p>
+        <a href="#" class="design-by">DESIGN BY SHAN</a>
+    </div>
+</footer>
+
+</body>
+
+</html>
